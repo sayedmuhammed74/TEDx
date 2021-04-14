@@ -330,6 +330,7 @@ header .icons .sun {
     position: relative;
     bottom: 54px;
     text-align: initial;
+    z-index: -1;
 }
 
 .team .container .members-bar {
