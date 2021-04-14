@@ -191,6 +191,10 @@ header .icons .sun {
     overflow: hidden;
     transition: .4s;
 }
+.top-list.fixed{
+    position:fixed;
+    top:65px;
+}
 
 .top-list ul {
     list-style: none;
@@ -212,6 +216,7 @@ header .icons .sun {
     color: #fff;
     font-weight: bold;
     transition: .4s;
+    user-select:none;
 }
 
 
@@ -333,8 +338,8 @@ header .icons .sun {
 }
 
 .team .container .member {
-    width: 154px;
-    height: 250px;
+    width: 178px;
+    height: 294px;
 }
 
 .team .container .members-bar .member .image{
