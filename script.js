@@ -36,6 +36,7 @@ function sun(){
 window.addEventListener('scroll', function(){
     var header = document.getElementById('headnav');
     header.classList.toggle('sticky', window.scrollY > 0);
+    document.querySelector('.top-list').classList.toggle('fixed' ,  window.scrollY > 0);
 })
 
 // Drop list
