@@ -14,6 +14,7 @@ body{
     font-family: 'Poppins', sans-serif;
     overflow: scroll;
     height: 520px;
+    transition: background-color .5s;
 }
 
 .container{
@@ -31,6 +32,10 @@ div.massenger{
     text-align: center;
     border-radius: 50%;
     cursor: pointer;
+}
+
+p{
+    transition: color .5s;
 }
 
 /* icons */
@@ -457,17 +462,6 @@ footer .container p{
     margin-top: -29px;
     z-index: 2;
 }
-
-header nav.contact-page{
-    /* padding-bottom: 33px;
-    position: fixed;
-    width: 100%;
-    z-index: 3;
-    background: black;
-    transition: .6s;
-    margin-top: -40px; */
-}
-
 
 h1.contact{
     text-align: center;
