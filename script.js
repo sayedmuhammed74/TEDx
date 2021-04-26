@@ -35,16 +35,11 @@ function sun(){
 
 window.addEventListener('scroll', function(){
     var header = document.getElementById('headnav');
-    header.classList.toggle('sticky', window.scrollY > 0);
+    header.classList.toggle('sticky', window.scrollY > 140);
     document.querySelector('.top-list').classList.toggle('fixed' ,  window.scrollY > 0);
 })
 
 // Drop list
-
-// if (window.innerWidth >= 1022) {
-//     document.myList.style.display = 'none'; 
-//     document.hidden.style.display = 'none'; 
-// }
 
 var listIcon = document.querySelector('i.fas.fa-list-ul'),
     hiddenIcon = document.querySelector('i.fas.fa-times'),
