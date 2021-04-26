@@ -86,7 +86,7 @@ header nav {
     padding-bottom: 33px;
     position: fixed;
     width: 100%;
-    transition: .6s;
+    transition: 1s;
 }
 header nav.sticky{
     background-color: #000;
@@ -102,7 +102,7 @@ header nav.sticky .container{
 }
 header nav.sticky .container ul li {
     margin-right: 10px;
-    transition: .6s;
+    transition: .2s;
 }
 
 header nav .container{
@@ -199,6 +199,7 @@ header .icons .sun {
 .top-list.fixed{
     position:fixed;
     top:65px;
+    z-index: 100;
 }
 
 .top-list ul {
@@ -459,8 +460,13 @@ footer .container p{
 .contact-header{
     background: #000;
     height: 117px;
-    margin-top: -29px;
+    margin-top: -1px;
     z-index: 2;
+}
+
+.contact-header .contact-page{
+    background-color: black;
+    z-index: 1000;
 }
 
 h1.contact{
@@ -476,7 +482,7 @@ h1.contact{
 form.contact-form{
     background: bottom;
     margin: 85px auto;
-    width: 400px;
+    max-width: 400px;
     position: relative;
     z-index: 0;
 }
@@ -520,7 +526,11 @@ form.contact-form input.submit{
     cursor: pointer;
 }
 
-
+.contact-header .contact-page .top-list{
+    position: fixed;
+    top: 106px;
+    z-index: 1000;
+}
 
 
 @media (max-width:700px){
@@ -569,6 +579,23 @@ form.contact-form input.submit{
     footer .container ul li a {
         font-size: 14px
     }
+    .contact-header .contact-page .top-list{
+        position: fixed;
+        top: 106px;
+        z-index: 1000;
+    }
+}
+
+@media (max-width:500px){
+
+    form.contact-form{
+        text-align: center;
+    }
+    form.contact-form input{
+        width: 80%;
+        margin: 7px auto;
+    }
+
 }
 
 @media (max-width: 1022px){
@@ -591,6 +618,7 @@ form.contact-form input.submit{
         opacity: 1;
         cursor: pointer;
     }
+
 
 
 }
