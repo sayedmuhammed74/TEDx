@@ -77,9 +77,30 @@ i.fas.fa-times {
 /* header */
 
 header{
-    background-image: url(../images/mike.png);
+    /* background: url(../images/mike.png); */
     height: 657px;
     background-size: cover;
+    transition: animation .6s;
+}
+header .back{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* animation-iteration-count: infinite; */
+    transition: animation .9s;
+}
+
+header .back.one{
+}
+header .two{
+    animation: backgroundTwo 8s;
+    animation-delay: 8s;
+    animation-iteration-count: infinite;
+}
+header .three{
+    animation: backgroundOne 8s;
+    /* animation-delay: 4s; */
+    animation-iteration-count: infinite;
 }
 
 header nav {
@@ -164,6 +185,10 @@ a#event {
 
 li.event:hover {
     border-bottom: 0;
+}
+a.event{
+    color: gray;
+    cursor: not-allowed;
 }
 
 header nav ul li a:focus{
@@ -631,3 +656,38 @@ form.contact-form input.submit{
         transform: translateX(100px);
     }
 }
+
+@keyframes backgroundOne {
+    0%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(100%);
+    }
+    50%{
+        transform: translateX(200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+@keyframes backgroundTwo {
+    0%{
+        transform: translateX(0%);
+    }
+    25%{
+        transform: translateX(-100%);
+    }
+    50%{
+        transform: translateX(-200%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+
+
+
+
+
+
